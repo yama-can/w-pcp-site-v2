@@ -1,0 +1,388 @@
+/* Copyright 2023 W-PCP */
+
+:root {
+  margin: 0;
+  --anker-animaition: 0.3s;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-device-width: 480px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+a:not(h1, h2, h3, h4, h5, h6, p, ins a),
+ins:not(h1, h2, h3, h4, h5, h6, p, a ins) {
+  margin-left: 10px;
+}
+#content h2 {
+  border: solid gray;
+  border-width: 1px 1px 1px 0.3em;
+  padding-left: 0.3em;
+}
+#content h3 {
+  border: solid yellowgreen;
+  border-width: 1px 1px 1px 0.3em;
+  padding-left: 0.4em;
+}
+#content h4 {
+  padding-left: 0.5em;
+}
+#content h5 {
+  padding-left: 0.6em;
+}
+#content h6 {
+  padding-left: 0.7em;
+}
+#content p {
+  padding-left: 0.65em;
+}
+.contact * {
+  display: inline-block;
+}
+footer {
+  background-color: #3a3a3a;
+  text-align: right;
+  color: white;
+}
+footer a {
+  color: aqua;
+}
+.fh {
+  z-index: 9999;
+  position: fixed;
+  height: 10vh;
+  width: 100vw;
+  padding-bottom: 10px;
+  top: 0;
+  box-shadow: 4px 10px 10px 4px #ccc;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+.fh * {
+  display: inline-block;
+  top: 0;
+  transition: 0.5s;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.fh h2 {
+  margin: 0;
+}
+.fh div#linkmenu * {
+  position: static;
+  padding-right: 18px;
+  right: 4vw;
+  top: 5vh;
+}
+#titles {
+  text-align: center;
+  color: black;
+  padding-top: 10vh;
+  padding-bottom: 20pt;
+  background: url("https://www.w-pcp.net/background.webp");
+  background-size: cover;
+  background-position: top center;
+  text-shadow: 2px 2px white;
+  pointer-events: none;
+}
+#titles h1 {
+  margin: 0;
+  padding-top: 5vh;
+}
+#titles h2 {
+  padding-top: 6vh;
+}
+.gs {
+  display: block;
+  margin-top: 8vh;
+  animation-name: down;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  font-weight: bold;
+  font-size: 30pt;
+}
+@keyframes down {
+  0% {
+    padding-top: 0px;
+  }
+  100% {
+    padding-top: 20px;
+  }
+}
+iframe.countdown {
+  width: 80vw;
+  height: 40vh;
+  border: none;
+}
+* {
+  font-family: "M PLUS 1 Code", sans-serif;
+}
+header#errorh {
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  font-size: 30pt;
+  background: url("https://www.w-pcp.net/background.webp");
+  background-size: cover;
+  background-position: top center;
+  text-shadow: 2px 2px white;
+  text-shadow: 2px 2px white;
+}
+body:has(header#errorh) p:not(footer *) {
+  font-size: 20pt;
+}
+a:not(.na) {
+  transition: var(--anker-animaition);
+  transition: 0.5s;
+}
+a:hover:not(#links a):not(.na) {
+  color: brown;
+}
+a:hover:visited:not(#links a):not(.na) {
+  color: green;
+}
+a:hover:active:not(#links a):not(.na) {
+  color: yellow;
+}
+#links {
+  height: 20vh;
+  background-color: white;
+  text-align: center;
+  padding-top: 10vh;
+}
+#links a {
+  padding: 0.5em;
+  color: blue;
+  background-color: aliceblue;
+}
+#links a:hover {
+  color: white;
+  background-color: aliceblue;
+}
+button {
+  transition: 0.2s;
+}
+button,
+#sidebar a {
+  padding: 0.5em;
+  color: blue;
+  background-color: aliceblue;
+  border-radius: 15px;
+}
+#sidebar li {
+  list-style: none;
+  margin-top: 1.5em;
+}
+button:hover,
+#sidebar a:hover {
+  color: white;
+  background-color: aliceblue;
+}
+#sidebar li ul {
+  font-size: 9pt;
+}
+#links #albums {
+  margin-top: 30px;
+}
+#links #albums a#albumurl + br + div#albumlist a {
+  padding: 0.5em;
+  color: blue;
+  background-color: white;
+}
+#links #albums a#albumurl + br + div#albumlist a:hover {
+  color: black;
+  background-color: aliceblue;
+}
+#links #albums a#albumurl + br + div#albumlist {
+  display: none;
+  padding-top: 20px;
+}
+#links #albums a:hover#albumurl + br + div#albumlist {
+  display: inline-block;
+}
+#links #albums a:hover#albumurl + br + div#albumlist {
+  display: inline-block;
+}
+#links #albums a#albumurl + br + div#albumlist:hover {
+  display: inline-block;
+}
+div#shares {
+  text-align: center;
+  margin-bottom: 10px;
+}
+social-share {
+  border: none;
+  border-radius: 15px;
+  display: inline-block;
+}
+#albumlist ul li {
+  list-style: none;
+  position: inherit;
+}
+#albumlist ul li a {
+  border-radius: 5px;
+}
+div#shares {
+  margin-top: 20px;
+}
+.f2 {
+  background-color: #fff;
+  box-shadow: 0 0 5px black;
+  margin: 10px;
+  padding: 5px 0 5px 0;
+}
+.f1 {
+  background: linear-gradient(#29c9cc, white);
+  padding-top: 3px;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#sidebar {
+  display: none;
+}
+
+#sidebar.open {
+  display: block;
+  border: none;
+  position: fixed;
+  font-size: 5vh;
+  animation: slideInFromRight 1s ease-out;
+  background: #3a3a3abb;
+  z-index: 100000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.f1 .f2 .menu {
+  background: aqua;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+body#menu ul {
+  padding-top: 5vh;
+}
+
+div.fh h2 {
+  display: inline-table;
+}
+
+social-share[type="system"] {
+  background: darkslategrey;
+}
+
+social-share[type="twitter"] {
+  background: #1d9bf0;
+}
+
+social-share[type="line"] {
+  background: #22ba4f;
+}
+
+social-share[type="sms"] {
+  background: darkslategrey;
+}
+
+social-share[type="email"] {
+  background: darkslategrey;
+}
+social-share img {
+  height: 64px;
+  width: 64px;
+}
+
+.none {
+  display: none;
+}
+
+iframe#sidebar {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body#menu > div > div.menu a {
+  color: white;
+}
+
+body#menu > div > div.menu > ul > li > a {
+  display: block;
+  background: #22ba4f;
+}
+
+body#menu > div > div.menu ul {
+  list-style: none;
+}
+
+@media (min-width: 1264px) {
+  body#menu > div > div.menu {
+    display: inline-grid;
+    width: 250px;
+    background: #3a3a3aaa;
+    flex: 1;
+  }
+
+  body#menu > div {
+    text-align: center;
+    display: flex;
+  }
+}
+
+div#fitmenu {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+div#fitmenu > button {
+  height: 5em;
+  width: 5em;
+}
+
+a[target="_blank"] {
+  background: url(/new-window.webp);
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 1.5em;
+}
+
+#hico {
+  height: 10vh;
+  width: 10vh;
+}

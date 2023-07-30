@@ -1,0 +1,20 @@
+{
+    "name": "早稲田中高 PCP",
+    "short_name": "早稲田 PCP",
+    "theme_color": "aqua",
+    "background_color": "white",
+    "display": "standalone",
+    "start_url": "/",
+    "description": "PCプログラミング部についての詳細です。",
+    "lang": "ja-jp",
+    "icons": [{
+            "src": "/icon-sub.webp",
+            "sizes": "512x512",
+            "type": "image/webp"
+        }
+    ],
+    "orientation": "portrait-primary",
+    "dir": "ltr",
+    "related_applications": [],
+    "prefer_related_applications": false
+}

@@ -1,0 +1,10 @@
+/*
+ X-Frame-Options: DENY
+/kofu/countdown
+ ! X-Frame-Options
+/download/real_bomber
+ Location: https://drive.google.com/u/0/uc?id=1qiVMv8lYe_j215RSRUNix4YzsAZaB4pg&export=download
+/study/easy-math
+ ! X-Frame-Options
+/blog/iframe/*
+ ! X-Frame-Options

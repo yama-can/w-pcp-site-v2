@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- Google tag (gtag.js) -->
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-8NKPCSW9B9"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-8NKPCSW9B9');
+	</script>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="x-dns-prefetch-control" content="on" />
+	<meta name="theme-color" content="aqua" />
+	<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Event",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "name": "興風祭2023",
+      "startDate": "2023-09-30T09:00+09:00",
+      "endDate": "2023-10-01T16:00+09:00",
+      "location": {
+        "@type": "Place",
+        "name": "早稲田中学高等学校",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "馬場下町62",
+          "addressLocality": "新宿区",
+          "addressRegion": "東京都",
+          "addressCountry": "日本",
+          "postalCode": "1628654"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "早稲田中学校・高等学校 PCプログラミング部",
+        "url": "https://www.w-pcp.net"
+      },
+      "image": "https://static.w-pcp.net/icon.webp",
+      "description": "早稲田中学高等学校の興風祭でのPCプログラミング部についての説明です。",
+      "url": "https://www.w-pcp.net/kofu/",
+      "performer": {
+        "@type": "Person",
+        "name": "部員"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY",
+        "url": "https://www.w-pcp.net/kofu/wait-ticket",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2023-09-17T12:00+09:00"
+      }
+    }
+  </script>
+	<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://www.w-pcp.net",
+      "logo": "https://www.w-pcp.net/icon.webp"
+    }
+	</script>
+	<link rel="apple-touch-icon" href="/icon-sub.webp">
+	<link rel="manifest" href="/manifest.json">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+	<script src="/script.js"></script>
+	<link rel="stylesheet" href="/style.css" />
+	<base target="_top" />
+	<meta property="og:site_name" content="【興風祭】 早稲田中学校・高等学校 PCプログラミング部" />
+	<meta property="og:image" content="https://www.w-pcp.net/icon.webp" />
+	<link rel="icon" href="https://www.w-pcp.net/icon.webp" />
+	<meta name="twitter:card" content="app" />
+	<meta name="twitter:creator" content="@waseda_pcp" />
+	<%- head %>
+</head>
+
+<body>
+	<div class="fh">
+		<h2><img src="https://www.w-pcp.net/icon.webp" id="hico" alt=""></img>PCプログラミング部</h2>
+	</div>
+	<header id="titles">
+		<h1><%= title %></h1>
+		<h2>早稲田<br />PCプログラミング部</h2>
+	</header>
+	<div class="f1">
+		<div class="f2">
+			<div id="shares">
+				<p>ぜひこのサイトをシェアしてください！！</p>
+				<br />
+				<social-share type="system" data-param-text="早稲田中学校・高等学校のページを見てきました！！">
+					<img src="/image/share/share.webp" title="share" />
+				</social-share>
+				<social-share type="twitter" data-param-text="早稲田中学校・高等学校のページを見てきました！！">
+					<img src="/image/share/twitter.webp" title="share with twitter" /></social-share>
+				<social-share type="line" data-param-text="早稲田中学校・高等学校のページを見てきました！！">
+					<img src="/image/share/line.webp" title="share with line" /></social-share>
+				<social-share type="sms" data-param-body="早稲田中学校・高等学校のページを見てきました！！">
+					<img src="/image/share/sms.webp" title="share with sms" /></social-share>
+				<social-share type="email" data-param-subject="早稲田中学校・高等学校のページを見てきました！！">
+					<img src="/image/share/mail.webp" title="share with email" /></social-share>
+			</div>
+			<div class="menu">
+				<a href="/" class="na"><button>Home</button></a>
+				<a href="/kofu" class="na"><button>興風祭</button></a>
+				<a href="/allsite" class="na"><button>サイト一覧</button></a>
+			</div>
+			<div id="f"></div>
+			<noscript>
+				<h2>このウェブサイトはJavaScriptを一部機能に使用しています。</h2>
+				<p>
+					全機能を有効にするには、JavaScriptをブラウザの設定から有効にしてください。
+				</p>
+			</noscript>
+			<div id="content">
+				<%- data %>
+			</div>
+		</div>
+	</div>
+	<footer id="support">
+		<h2>
+			<a href="/" target="_top">W-PCP</a> (早稲田中学校・高等学校
+			PCプログラミング部)
+		</h2>
+		<p>All rights reserved.</p>
+		<div class="contact">
+			<p>もし、問題やコンテンツのリクエスト等がありましたら、</p>
+			<a href="mailto:support@w-pcp.net" target="_blank">
+				<address>Support@w-pcp.net</address>
+			</a>
+			<p>までご連絡ください。</p>
+			<p>
+				また、PCPに来ていただけると部員一同励みになりますので、興風祭へおいでになる際はぜひPCPによってみてください。
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>
