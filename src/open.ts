@@ -13,6 +13,7 @@ chokidar.watch(['html', 'template.ejs']).on('all', () => {
 http.createServer((req, res) => {
 	const file = path.join("public", req.url!!);
 	const stat = fs.statSync(file, { throwIfNoEntry: false });
+	res.setHeader('Access-Control-Allow-Origin', '*');
 	if (!stat) {
 		if (fs.statSync(file + '.html', { throwIfNoEntry: false })?.isFile()) {
 			res.setHeader('content-type', 'text/html');
